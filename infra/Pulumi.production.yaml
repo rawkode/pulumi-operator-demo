@@ -1,0 +1,4 @@
+config:
+  aws:region: eu-west-2
+  pulumi-demo:pulumiAccessToken:
+    secure: AAABAF1ysjOSTbjD6mxzbuGGoXbEYX/yIh0IUzLek7R1I9W1JCLmhIols2ACCN3IBXPFPkrKlJIZNU0zgYR+ZVVH3zyIpE+T0sxx4Q==

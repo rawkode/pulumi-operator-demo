@@ -1,0 +1,4 @@
+name: pulumi-demo
+runtime: nodejs
+description: A minimal AWS TypeScript Pulumi program
+main: src/index.ts
