@@ -6,6 +6,8 @@ const cluster = new eks.Cluster("production", {
 });
 const clusterOidcProvider = cluster.core.oidcProvider;
 
+export const kubeconfig = cluster.kubeconfig;
+
 import { allowOnboarding, onboardTeam } from "./teams";
 
 const teamDeps = allowOnboarding({
@@ -18,8 +20,8 @@ import { becomeS3Full } from "./identities/s3-full";
 
 onboardTeam(
   {
-    name: "operator-demo",
-    org: "P4X-6",
+    name: "s3-bucket",
+    org: "P4X-639",
     repository: "https://github.com/rawkode/pulumi-operator-demo",
     directory: "s3-bucket",
     reference: "refs/heads/main",
