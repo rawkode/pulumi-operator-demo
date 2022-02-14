@@ -8,7 +8,7 @@ import (
 func main() {
 	pulumi.Run(func(ctx *pulumi.Context) error {
 		bucket, err := s3.NewBucket(ctx, "serious-production-bucket", &s3.BucketArgs{
-			AccessControl: "private"
+			Acl: pulumi.String("private"),
 		})
 		if err != nil {
 			return err
